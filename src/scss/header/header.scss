@@ -1,0 +1,49 @@
+@mixin header-flex-direction() {
+    --direction: column;
+    flex-direction: var(--direction);
+    @include md(--direction, row);
+}
+@mixin header-align() {
+    --align-items: left;
+    @include md(--align-items, center);
+    align-items: var(--align-items);
+}
+.header{
+    --mt-row: 25px;
+    @include md(--mt-row, 0px);
+    --padding-header: 40px;
+    @include padding(var(--padding-header));
+}
+.header-row{
+    justify-content: space-between;
+    @include header-align();
+    @include header-flex-direction();
+}
+.logo{
+    @include fz(var(--fz-logo));
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    line-height: 1.2;
+}
+.nav{
+    @include mt(var(--mt-row));
+    @include header-align();
+    @include header-flex-direction()
+}
+.nav-link{
+    @include mb(var(--mt-row));
+    
+    color: var(--color-main);
+    @include fz(var(--fz-nav-link));
+    @include lh(var(--lh-nav-link));
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: all 1s ease 0s;
+    &:hover, &:focus{
+        text-decoration: underline;
+    }
+}
+ 

@@ -1,0 +1,27 @@
+- 
+    var links = [
+        {
+            text:"Who We Are",
+            href: "/",
+        }, 
+        {
+            text:"Our Attorneys",
+                    href: "/",
+        },
+        {
+            text:"News & Insights",
+            href: "/", 
+        },
+        {
+            text:"Who We Are",
+            href: "/", 
+        },
+        {
+            text:"Contact Us",
+            href: "/", 
+        },
+    ]
+
+nav.nav.row-no-gutters
+    each link in links
+        a.nav-link.grid(href=link.href)= link.text

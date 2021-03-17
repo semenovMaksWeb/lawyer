@@ -16,7 +16,7 @@ const PATHS = {
 
 // Pages const for HtmlWebpackPlugin
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#html-dir-folder
-const PAGES_DIR = PATHS.src + '/view'
+const PAGES_DIR = PATHS.src
 const PAGES = fs
   .readdirSync(PAGES_DIR)
   .filter(fileName => fileName.endsWith('.pug'))
@@ -169,7 +169,7 @@ module.exports = {
       page =>
         new HtmlWebpackPlugin({
           template: `${PAGES_DIR}/${page}`,
-          filename: `./${page}.html`
+          filename: `./${page.split('.').slice(0,-1).join('.') || this + ""}.html`
         })
     )
   ]

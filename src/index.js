@@ -1,2 +1,3 @@
-import  "~/view/index/index.js"
-import  "~/view/blog/blog.js"
+import index from "~/index.pug"
+document.body.appendChild(index)
+import "~/scss/index.scss"
