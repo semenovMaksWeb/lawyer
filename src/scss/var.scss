@@ -21,8 +21,11 @@
 
     --lh-nav-link: 15px;
     --lh-banner: 1.2;
-    --lh-h3: 34px;
+    --lh-h2: 34px;
+    --lh-h3: 38px;
     --lh-text: 24px;
+
+    --size-section: 50px;
 }
 @include xs-block(){
     :root{
@@ -49,6 +52,8 @@
         --fz-banner: 82px;
         --fz-h2:36px;
 
-        --lh-h3: 40px;
+        --lh-h2: 40px;
+
+        --size-section: 50px;
     }
 }

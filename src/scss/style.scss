@@ -7,7 +7,7 @@
     font-weight: 700;
     color: (var(--color-main));
     text-transform: uppercase;
-    @include lh(var(--lh-h3));
+    @include lh(var(--lh-h2));
 
     padding-top: var(--mt);
 
@@ -24,9 +24,19 @@
         background-color: var(--color-info);
     }
 }
-
+.h3{
+    font-weight: 700;
+    @include fz(var(--fz-h3));
+    @include lh(var(--lh-h3));
+}
 .text{
     @include fz(var(--fz-text));
     @include lh(var(--lh-text));
     color: var(--color-text);
+}
+.section{
+    @include my(var(--size-section));
+}
+.section-fon{
+    @include py(var(--size-section));
 }

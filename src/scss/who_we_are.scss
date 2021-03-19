@@ -6,9 +6,7 @@
 }
 
 .section-who_we_are{
-    --margin-x: 50px;
-    @include lg(--margin-x, 100px);
-    @include my(var(--margin-x));
+ 
 }
 .row-who_we_are{
     justify-content: space-between;

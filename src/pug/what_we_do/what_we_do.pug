@@ -1,0 +1,25 @@
+- 
+    var data = [
+        {
+            src: require("~/assets/img/what_we_do_1.png").default,
+            text: "ASILO",
+        },
+        {
+            src: require("~/assets/img/what_we_do_2.png").default,
+            text: "BONDS Y FIANZAS DE MIGRACION",
+        },
+        {
+            src: require("~/assets/img/what_we_do_3.png").default,
+            text: "PERMISO DE TRABAJO"
+        }
+    ]
+section.section-fon.section-what_we_do
+    div.container
+        div.title_item-what_we_do
+            h2.h2.title-what_we_do WHAT WE DO
+        div.row.row-what_we_do
+            each item in data
+                div.col.col-what_we_do
+                    img.img(src=item.src, alt="")
+                    .h3.text-what_we_do 
+                        =item.text

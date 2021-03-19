@@ -1,0 +1,45 @@
+.section-what_we_do{
+    background-color: #fafafa;
+}
+.row-what_we_do{
+    justify-content: center;
+}
+.col-what_we_do{
+    position: relative;
+
+    --col:12;
+    @include xs(--col, 8);
+    @include md(--col, 6);
+    @include lg(--col, 4);
+    @include col();
+    
+    --mb: 20px;
+    @include md(var(--mb), 0);
+    margin-bottom: (var(--mb));
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.title_item-what_we_do{
+    --mb: 40px;
+    @include lg(--mb, 80px);
+    @include mb(var(--mb));
+}
+ 
+.title-what_we_do{
+    text-align: center;
+    
+    &::after{
+        left: calc(50% - 30px);
+    }
+}
+.text-what_we_do{
+    color: #fff;
+    text-align: center;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
