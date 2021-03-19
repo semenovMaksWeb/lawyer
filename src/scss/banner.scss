@@ -1,0 +1,19 @@
+.banner{
+    background-image: url('~/assets/img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 40vw; 
+    max-height: 850px;
+
+    display: flex;
+    align-items: center;
+}
+.banner-text{
+    @include fz(var(--fz-banner));
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: var( --lh-banner)
+}

@@ -1,0 +1,38 @@
+@mixin margin-bottom {
+    --mb-text:15px;
+    @include md(--mb-text, 25px);
+    @include lg(--mb-text, 35px);
+    @include mb(var(--mb-text));
+}
+
+.section-who_we_are{
+    --margin-x: 50px;
+    @include lg(--margin-x, 100px);
+    @include my(var(--margin-x));
+}
+.row-who_we_are{
+    justify-content: space-between;
+}
+.col-who_we_are{
+    --col: 12;
+    @include md(--col, 6);
+    @include col();
+}
+.title-who_we_are{
+    @include margin-bottom();
+}
+.img-who_we_are{
+    --ml: 0px;
+    @include md(--ml, auto);
+    @include ml(var(--ml));
+    max-width: 400px;
+}
+.text-who_we_are{
+    @include margin-bottom();
+    &:last-child{
+        --mb: 15px;
+        @include md(--col, 0px);
+        @include mb(--mb);
+    }
+}
+ 

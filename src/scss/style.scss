@@ -1,0 +1,32 @@
+.h2{
+    --mt: 15px;
+    @include md(--ml, 25px);
+    position: relative;
+
+    @include fz(var(--fz-h2));
+    font-weight: 700;
+    color: (var(--color-main));
+    text-transform: uppercase;
+    @include lh(var(--lh-h3));
+
+    padding-top: var(--mt);
+
+    &::after{
+        content: '';
+
+        position: absolute;
+        top:0;
+        left: 0;
+
+        width: 60px;
+        height: 4px;
+        
+        background-color: var(--color-info);
+    }
+}
+
+.text{
+    @include fz(var(--fz-text));
+    @include lh(var(--lh-text));
+    color: var(--color-text);
+}

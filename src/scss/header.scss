@@ -9,9 +9,11 @@
     align-items: var(--align-items);
 }
 .header{
-    --mt-row: 25px;
-    @include md(--mt-row, 0px);
-    --padding-header: 40px;
+    --my-row: 25px;
+    @include md(--my-row, 0px);
+
+    --padding-header: 20px;
+    @include md(--padding-header, 40px);
     @include padding(var(--padding-header));
 }
 .header-row{
@@ -25,14 +27,17 @@
     font-weight: 700;
     letter-spacing: 0.2em;
     line-height: 1.2;
+    color: var(--color-main);
+    
+    @include pb(5px);
 }
 .nav{
-    @include mt(var(--mt-row));
+    @include mt(var(--my-row));
     @include header-align();
     @include header-flex-direction()
 }
 .nav-link{
-    @include mb(var(--mt-row));
+    @include mb(var(--my-row));
     
     color: var(--color-main);
     @include fz(var(--fz-nav-link));
@@ -44,6 +49,9 @@
     transition: all 1s ease 0s;
     &:hover, &:focus{
         text-decoration: underline;
+    }
+    &:last-child{
+        margin-bottom: 0;
     }
 }
  

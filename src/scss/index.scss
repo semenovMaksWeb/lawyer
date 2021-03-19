@@ -1,25 +1,9 @@
 @import "~/assets/scss-mixin/index.scss";
 
-:root{
-    --container-offers: 30px;
-    --offers: 15px;
-    --container-width: 1100px;
-
-    --color-main: #0005f1;
-    --color-text: #98aaad;
-    --color-text-analog: #ebecfc;
-    --color-info: #fa3b14;
-    --color-bg-footer: #000a2e;
-
-    --fz-nav-link: 12px;
-    --fz-banner: 82px;
-    --fz-logo:30px;
-    --fz-h2:36px;
-    --fz-h3: 26px;
-    --fz-text: 14px;
-    --fz-info: 18px;
-
-    --lh-nav-link: 15px;
-}
-@import "header/header.scss";
+ 
+@import "var.scss";
 @import "base.scss";
+@import "style.scss";
+@import "header.scss";
+@import "banner.scss";
+@import "who_we_are.scss"

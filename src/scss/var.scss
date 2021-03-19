@@ -1,0 +1,54 @@
+:root{
+    --colums: 12;
+    --offers: 15px;
+    
+    --container-offers: 30px;
+    --container-width: 1100px;
+
+    --color-main: #0005f1;
+    --color-text: #98aaad;
+    --color-text-analog: #ebecfc;
+    --color-info: #fa3b14;
+    --color-bg-footer: #000a2e;
+
+    --fz-nav-link: 12px;
+    --fz-banner: 22px;
+    --fz-logo:30px;
+    --fz-h2:24px;
+    --fz-h3: 26px;
+    --fz-text: 14px;
+    --fz-info: 18px;
+
+    --lh-nav-link: 15px;
+    --lh-banner: 1.2;
+    --lh-h3: 34px;
+    --lh-text: 24px;
+}
+@include xs-block(){
+    :root{
+        --fz-banner: 32px;
+    }
+}
+
+@include  sm-block(){
+    :root{
+        --fz-banner: 52px;
+        --fz-h2:30px;
+
+    }
+}
+@include  md-block(){
+    :root{
+        --fz-banner: 62px;
+    }
+}
+
+
+@include lg-block(){
+    :root{
+        --fz-banner: 82px;
+        --fz-h2:36px;
+
+        --lh-h3: 40px;
+    }
+}
