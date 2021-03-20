@@ -1,0 +1,32 @@
+- 
+    var data = [
+        {
+            title: 'Online Tools & Services That are Really Serving',
+            text: "With 2017 winding down and 2018 right around the corner, we wanted to say thank you for supporting our cause"
+        }, 
+        {
+            title: 'Free WordPress Page Builder – Qards',
+            text: "The design world moves fast and there’s always new tools coming out. To stay ahead of the game requires"
+        },
+        {
+            title: 'Afrikaans',
+            text: 'Honestidad, Credibilidad y Experiencia a tu servicio. Los abogados de MLGA se dedican a ofrecer un amplio numero de servicios legales para las personas que han venido a los Estados Unidos. Con amplia experiencia en la defensa contra la deportación, nos tomamos el tiempo necesario para evaluar las necesidades y circunstancias únicas de cada cliente.'
+        },
+        {
+            title: "New Year Giveaway, Win Designmodo Products Valued at $5485!",
+            text: "Charlotte UI Kit is a huge trendy collection of mobile screens and components. Fully customized."
+        }
+    ]
+
+
+div.section-fon.section-news
+    div.container
+        div.title_text-item
+            h2.h2.title-text#news NEWS & EVENTS
+        div.row
+            each item in data
+                div.col.col-news
+                    h3.h3.title-news 
+                        =item.title
+                    p.text.text-news
+                        =item.text             

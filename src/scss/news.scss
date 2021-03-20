@@ -1,0 +1,51 @@
+.section-news{
+    background-color: #fafafa;
+}
+.col-news{
+    --mb: 30px;
+    @include mb(var(--mb));
+
+    --col: 12;
+    @include md(--col, 6);
+    @include col();
+
+    position: relative;
+
+    &::after{
+        content: '';
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+ 
+        height: 2px;
+        width: 75%;
+
+        background-color: var(--color-text-analog);
+    }
+ 
+}
+.title-news{
+    --mb: 30px;
+    @include mb(var(--mb));
+}
+.text-news{
+    --col: 10;
+    @include col();
+
+    --pb: 30px;
+    --mb: 30px;
+    @include pb(var(--pb));
+
+    &::after{
+        content: "\2192";
+        display: block;
+
+        --mt:20px;
+        margin-top: var(--mt); 
+        
+        --fz:40px;
+        font-size: var(--fz);
+        color: var(--color-info);
+    }
+}

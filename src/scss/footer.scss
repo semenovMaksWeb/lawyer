@@ -1,0 +1,6 @@
+.footer{
+    color:#4359eb;
+    background-color: #051489;
+    --padding-y: 50px;
+    @include py(var(--padding-y));
+}
