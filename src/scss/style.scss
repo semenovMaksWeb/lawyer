@@ -1,3 +1,6 @@
+body{
+    font-family: var(--ff-main), sans-serif;
+}
 .h2{
     --mt: 15px;
     @include md(--ml, 25px);
@@ -30,9 +33,18 @@
     @include lh(var(--lh-h3));
 }
 .text{
+    font-family: var(--ff-text), sans-serif;
     @include fz(var(--fz-text));
     @include lh(var(--lh-text));
     color: var(--color-text);
+}
+.text-info{
+    font-family: var(--ff-text), sans-serif;
+    @include fz(var(--fz-info));
+    @include lh(var(--lh-text));
+    color: var(--color-info); 
+    font-weight: 700;
+    text-transform: uppercase;
 }
 .section{
     @include my(var(--size-section));

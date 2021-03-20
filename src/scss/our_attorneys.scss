@@ -1,0 +1,64 @@
+.section-our_attorneys{
+    background-image: url('~/assets/img/our_attorneys-bg.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title_col_text-our_attorneys{
+    color: #fff;
+
+    --mb: 15px;
+    @include lg(--mb, 30px);
+    margin-bottom:var(--mb);    
+}
+.col_text-our_attorneys{
+    --mt: 0px;
+    --mb: 40px;
+    @include lg(--mt, 100px);
+    @include lg(--mb, 0px);
+    margin-top: var(--mt);
+    margin-bottom: var(--mb);
+    // --mb: 30px;
+    // margin-bottom: var(--mb);
+
+    --col: 12;
+    @include lg(--col, 4);
+    @include col()
+}
+.col_items_img-our_attorneys{
+    --col: 12;
+    @include lg(--col, 8);
+    @include col();
+    --mb: 20px;
+    margin-bottom: calc(var(--mb) /-1 );
+}
+
+.col_img-our_attorneys {
+    position: relative;
+
+    --col: 12;
+    @include md(--col, 6);
+    @include col();
+
+    margin-bottom: var(--mb);
+}
+
+.title_img-our_attorneys {
+    color: #fff;
+    
+    position: absolute;
+    bottom: 50px;
+    left: 35px;
+}
+.text-our_attorneys{
+    --mb: 25px;
+    @include lg(--mb, 50px);
+    margin-bottom:var(--mb);
+
+    --col:12;
+    @include xs(--col, 8);
+    @include md(--col, 6);
+    @include lg(--col, 12);
+    @include col()
+}

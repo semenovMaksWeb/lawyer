@@ -1,0 +1,45 @@
+- 
+    var data = [
+        {
+            src: require("~/assets/img/our_attorneys_1.png").default,
+            name: "Albert",
+            surname: "Myburgh, Esq.",
+        },
+        {
+            src: require("~/assets/img/our_attorneys_2.png").default,
+            name: "Albert",
+            surname: "Myburgh, Esq.",
+        },
+        {
+            src: require("~/assets/img/our_attorneys_3.png").default,
+            name: "Albert",
+            surname: "Myburgh, Esq.",
+        },
+        {
+            src: require("~/assets/img/our_attorneys_4.png").default,
+            name: "Albert",
+            surname: "Myburgh, Esq.",
+        }
+    ]
+
+section.section-fon.section-our_attorneys
+    div.container
+        div.row
+            div.col.col_text-our_attorneys
+                h2.h2.title_col_text-our_attorneys OUR 
+                    br 
+                    | ATTORNEYS
+                p.text.text-our_attorneys
+                    | Honestidad, Credibilidad y Experiencia a tu servicio. Los abogados de MLGA se dedican a ofrecer un amplio    
+                div.text-info
+                    | see more
+            div.col.row.col_items_img-our_attorneys
+                each item in data
+                    div.col.col_img-our_attorneys 
+                        img.img(src=item.src)
+                        h3.h3.title_img-our_attorneys 
+                            =item.name 
+                            br
+                            =item.surname
+
+                
