@@ -1,4 +1,3 @@
-import index from "~/index.pug";
-document.body.appendChild(index);
+import "~/index.pug";
 import "~/scss/index.scss";
 import "~/assets/fonts/fonts.css";

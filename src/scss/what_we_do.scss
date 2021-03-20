@@ -27,13 +27,6 @@
     @include mb(var(--mb));
 }
  
-.title-what_we_do{
-    text-align: center;
-    
-    &::after{
-        left: calc(50% - 30px);
-    }
-}
 .text-what_we_do{
     color: #fff;
     text-align: center;

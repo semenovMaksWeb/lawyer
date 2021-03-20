@@ -1,0 +1,39 @@
+- 
+    var data = [
+        {
+            title: 'Spanish',
+            text1: "Honestidad, Credibilidad y Experiencia a tu servicio. Los abogados de MLGA se dedican a ofrecer un amplio numero de servicios legales para las personas que han venido a los Estados Unidos.",
+            text2: "Con amplia experiencia en la defensa contra la deportación, nos tomamos el tiempo necesario para evaluar las necesidades y circunstancias únicas de cada cliente.",
+        }, 
+        {
+            title: 'French',
+            text1: "Honestidad, Credibilidad y Experiencia a tu servicio. Los abogados de MLGA se dedican a ofrecer un amplio numero de servicios legales para las personas que han venido a los Estados Unidos.",
+            text2: "Con amplia experiencia en la defensa contra la deportación, nos tomamos el tiempo necesario para evaluar las necesidades y circunstancias únicas de cada cliente.",
+
+        },
+        {
+            title: 'Portuguese',
+            text1: "Honestidad, Credibilidad y Experiencia a tu servicio. Los abogados de MLGA se dedican a ofrecer un amplio numero de servicios legales para las personas que han venido a los Estados Unidos.",
+            text2: "Con amplia experiencia en la defensa contra la deportación, nos tomamos el tiempo necesario para evaluar las necesidades y circunstancias únicas de cada cliente.",
+        },
+        {
+            title: 'Afrikaans',
+            text1: "Honestidad, Credibilidad y Experiencia a tu servicio. Los abogados de MLGA se dedican a ofrecer un amplio numero de servicios legales para las personas que han venido a los Estados Unidos.",
+            text2: "Con amplia experiencia en la defensa contra la deportación, nos tomamos el tiempo necesario para evaluar las necesidades y circunstancias únicas de cada cliente.",
+        },
+    ]
+
+div.section
+    div.container
+        div.title_text-item
+            h2.h2.title-text The Languages
+        div.row
+            each item in data
+                div.col.col-the_languages
+                    h3.h3 
+                        =item.title
+                    p.text
+                        =item.text1
+                    p.text.text_last-the_languages  
+                        = item.text2
+                    div.text-info READ MORE                

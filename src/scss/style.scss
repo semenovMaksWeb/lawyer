@@ -46,9 +46,23 @@ body{
     font-weight: 700;
     text-transform: uppercase;
 }
+.title_text-item{
+    --mb: 40px;
+    @include lg(--mb, 80px);
+    @include mb(var(--mb));
+}
+
+
 .section{
     @include my(var(--size-section));
 }
 .section-fon{
     @include py(var(--size-section));
+}
+.title-text{
+    text-align: center;
+    
+    &::after{
+        left: calc(50% - 30px);
+    } 
 }

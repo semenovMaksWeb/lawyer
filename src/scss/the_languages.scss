@@ -1,0 +1,14 @@
+.col-the_languages{
+    --col: 12;
+    @include md(--col , 6);
+    @include lg(--col , 3);
+    @include col();
+
+    --mb: 20px;
+    margin-bottom: var(--mb);
+}
+
+.text_last-the_languages{
+    --mb:25px;
+    margin-bottom: var(--mb);
+}

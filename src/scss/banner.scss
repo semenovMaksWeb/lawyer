@@ -9,6 +9,9 @@
     display: flex;
     align-items: center;
 }
+.banner-2{
+    background-image: url('~/assets/img/banner_2.png'); 
+}
 .banner-text{
     @include fz(var(--fz-banner));
     color: #fff;
